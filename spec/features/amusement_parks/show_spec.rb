@@ -64,5 +64,6 @@ RSpec.describe "amusement parks show page" do
       visit "/amusement_parks/#{@ap_1.id}"
 
       expect(page).to have_content("5.3333333333333333/10")
+      #need to round to but keep coming up with nil class. however save_and_open_page shows average rounded with calling .round(1) on the model method
     end
 end
